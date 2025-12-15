@@ -1,5 +1,3 @@
-Here is the fixed format for your README:
-
 ````markdown
 # AI-Powered IoT Intrusion Detection System (IDS)
 
