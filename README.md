@@ -1,5 +1,3 @@
-Here is the fixed format for your README file, styled similarly to the example you provided:
-
 ```markdown
 # 🚀 **AI-Powered IoT Intrusion Detection System (IDS)**
 
@@ -16,10 +14,10 @@ An AI-powered Intrusion Detection System (IDS) designed specifically for IoT net
 </p>
 
 <p align="center">
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
-  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.7%2B-blue.svg"/></a>
-  <a href="https://flask.palletsprojects.com/en/2.0.x/"><img src="https://img.shields.io/badge/Flask-v2.0.1-blue"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Accuracy-98.5%25-brightgreen"/></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"/></a>
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.7%2B-blue.svg" alt="Python 3.7+"/></a>
+  <a href="https://flask.palletsprojects.com/en/2.0.x/"><img src="https://img.shields.io/badge/Flask-v2.0.1-blue" alt="Flask 2.0.1"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Accuracy-98.5%25-brightgreen" alt="Accuracy 98.5%"/></a>
 </p>
 
 ---
@@ -149,4 +147,3 @@ The machine learning models are trained on IoT attack datasets, including labele
 ---
 ```
 
-This format uses the style and structure from your provided example, with added visual elements such as badges and project sections for clarity and easy navigation.
