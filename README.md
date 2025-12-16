@@ -1,149 +1,158 @@
-```markdown
-# 🚀 **AI-Powered IoT Intrusion Detection System (IDS)**
+# 🚀 AI-Based IoT Intrusion Detection System (IDS)
 
-An AI-powered Intrusion Detection System (IDS) designed specifically for IoT networks to detect and classify security threats in real-time.
-
----
-
-<p align="center">
-  <img src="https://dummyimage.com/800x250/1a1a1a/ffffff&text=AI+IoT+IDS" alt="banner">
-</p>
-
-<p align="center">
-  <strong>Machine Learning • IoT Security • Intrusion Detection • Real-Time Monitoring</strong>
-</p>
-
-<p align="center">
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License"/></a>
-  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.7%2B-blue.svg" alt="Python 3.7+"/></a>
-  <a href="https://flask.palletsprojects.com/en/2.0.x/"><img src="https://img.shields.io/badge/Flask-v2.0.1-blue" alt="Flask 2.0.1"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Accuracy-98.5%25-brightgreen" alt="Accuracy 98.5%"/></a>
-</p>
+An AI-based Intrusion Detection System designed for **IoT and Cyber-Physical Systems (CPS)** environments.
+The system uses **machine learning** to detect malicious network behavior such as **DoS**, **MITM**, and **Data Injection attacks** through simulated traffic and real-time analysis.
 
 ---
 
-## 📌 **Overview**
+## 📌 Project Overview
 
-This project implements an AI-powered Intrusion Detection System (IDS) tailored for IoT networks. It uses machine learning to detect and classify various security threats in real-time, including Denial of Service (DoS), Man-in-the-Middle (MITM), and Data Injection attacks. The system provides robust monitoring and protection for IoT devices.
+IoT networks suffer from limited resources, heterogeneous devices, and large attack surfaces, making traditional rule-based security mechanisms insufficient.
+This project proposes an **AI-based IDS** that leverages a **Random Forest classifier** trained on network traffic features to distinguish between **normal and malicious packets**.
 
----
+The IDS integrates:
 
-## ✨ **Key Features**
-
-### 🔐 **Real-Time Threat Detection**
-
-The system detects attacks in real-time using advanced machine learning models.
-
-### 🛡️ **Multi-Type Attack Classification**
-
-Classifies various attacks such as DoS, MITM, and Data Injection attacks, improving response accuracy.
-
-### 📊 **High Accuracy**
-
-Achieves an impressive accuracy rate of **98.5%** in detecting and classifying IoT threats.
-
-### 📡 **Web Interface for Monitoring**
-
-Access the system’s dashboard through a web interface to monitor attack detection and view real-time logs.
+* Attack simulation
+* Machine learning-based detection
+* A Flask web dashboard for monitoring and interaction
 
 ---
 
-## 🧰 **Tech Stack**
+## 🎯 Objectives
 
-| Layer                | Technology                       |
-| -------------------- | -------------------------------- |
-| Machine Learning     | TensorFlow / Scikit-Learn        |
-| Web Interface        | Flask                            |
-| Frontend             | React.js                         |
-| Database             | MySQL                            |
-| Backend              | Python (Flask)                   |
+* Study common security threats in IoT-based CPS environments
+* Design an AI-based IDS capable of detecting evolving attacks
+* Simulate realistic IoT attacks (DoS, MITM, Data Injection)
+* Evaluate detection performance and system limitations
 
 ---
 
-## 📁 **Project Structure**
+## 🧠 Detection Capabilities
+
+| Attack Type        | Description                                    |
+| ------------------ | ---------------------------------------------- |
+| **DoS**            | Flooding and abnormal traffic behavior         |
+| **MITM**           | Interception and manipulation of communication |
+| **Data Injection** | Tampering with transmitted data                |
+
+📊 **Detection Rate:**
+The system detects approximately **45–50% of malicious packets** in real-time simulations
+(e.g., detecting ~50 malicious packets out of 100 packets per second).
+
+---
+
+## ⚙️ System Architecture
+
+The IDS follows a layered IoT–CPS architecture:
+
+* **IoT Devices & Sensors**
+* **Edge Devices & Gateways**
+* **Secure Communication (TLS/SSL, MQTT, HTTP)**
+* **Attack Simulation Layer**
+* **AI-Based Detection Engine**
+* **Flask Web Dashboard**
+
+> The full system architecture diagram is included in the project report and presentation.
+
+---
+
+## 🧰 Technology Stack
+
+| Component            | Technology                   |
+| -------------------- | ---------------------------- |
+| Programming Language | Python                       |
+| Machine Learning     | Scikit-Learn (Random Forest) |
+| Dataset              | NSL-KDD (processed)          |
+| Web Framework        | Flask                        |
+| Frontend             | HTML, CSS, JavaScript        |
+| Visualization        | Console logs + dashboard UI  |
+
+---
+
+## 📁 Project Structure
 
 ```
-
-AI-Based-IoT-IDS/
+Ai-Based-Iot-IDS/
 │
-├── app/
-│   ├── **init**.py
-│   ├── models.py
-│   └── routes.py
-│
-├── data/
-│   ├── training_data.csv
-│   └── attack_logs.csv
-│
-├── templates/
-│   ├── index.html
-│   └── dashboard.html
+├── Source/
+│   ├── preprocessing.py
+│   ├── model.py
+│   ├── attack_simulation.py
 │
 ├── static/
-│   ├── styles.css
-│   └── scripts.js
+│   └── style.css
 │
-├── requirements.txt
-├── app.py
+├── templates/
+│   └── index.html
+│
+├── flask_app.py
+├── classification_report.txt
 ├── README.md
-└── LICENSE
-
+└── .gitignore
 ```
 
 ---
 
-## ⚙️ **Deployment**
+## ▶️ How to Run the Project
 
-### **1️⃣ Install dependencies**
+1. **Create virtual environment**
 
+```bash
+python -m venv env
+env\Scripts\activate
 ```
 
+2. **Install dependencies**
+
+```bash
 pip install -r requirements.txt
-
 ```
 
-### **2️⃣ Run the system**
+3. **Run the Flask application**
 
+```bash
+python flask_app.py
 ```
 
-python app.py
+4. Open browser:
 
 ```
-
-### **3️⃣ Access the dashboard**
-
-Open your browser and navigate to `http://127.0.0.1:5000` to view the system’s dashboard.
+http://127.0.0.1:5000
+```
 
 ---
 
-## 📝 **Model Training & Dataset**
+## 📊 Evaluation & Results
 
-The machine learning models are trained on IoT attack datasets, including labeled attack types such as:
-
-* Denial of Service (DoS)
-* Man-in-the-Middle (MITM)
-* Data Injection
-
----
-
-## 🔮 **Future Enhancements**
-
-* Incorporate more advanced machine learning models for detection
-* Extend attack classification to other IoT-specific threats
-* Integrate with cloud services for broader IoT security coverage
-* Add device-specific detection and response mechanisms
+* Model trained on processed NSL-KDD features
+* Detection rate: **~45–50%**
+* Works in real-time simulation
+* Demonstrates feasibility of AI-based IDS in IoT environments
 
 ---
 
-## 👥 **Credits**
+## ⚠️ Limitations
 
-**Developed by:**
+* Detection rate is moderate due to:
 
-* **[Your Name]**
-* **[Collaborator's Name]**
-
-🔥 Proudly built for the **AI & IoT Security course**.
+  * Synthetic traffic generation
+  * Dataset imbalance
+  * Simplified attack simulation
+* No deployment on real IoT hardware
+* Latency and scalability not fully evaluated
 
 ---
-```
 
+## 🔮 Future Work
+
+* Improve detection rate using data augmentation
+* Explore deep learning or hybrid IDS models
+* Deploy on edge devices (Raspberry Pi, ESP32)
+* Add real-time network packet capture
+* Enhance dashboard with advanced analytics
+
+---
+
+## 📄 Academic Context
+
+This project was developed as part of a **Cyber-Physical Systems / IoT Security course**, following IEEE research structure and evaluation methodology.
