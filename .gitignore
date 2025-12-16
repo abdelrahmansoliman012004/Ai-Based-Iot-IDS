@@ -1,0 +1,69 @@
+# ================================
+# Python cache & compiled files
+# ================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ================================
+# Virtual environments
+# ================================
+env/
+venv/
+.venv/
+
+# ================================
+# Datasets & large data
+# ================================
+nsl-kdd/
+*.arff
+*.csv
+
+# ================================
+# Screenshots & media
+# ================================
+screenshots/
+images/
+*.png
+*.jpg
+*.jpeg
+
+# ================================
+# Trained models & preprocessors
+# ================================
+model.pkl
+preprocessor.pkl
+
+# ================================
+# Scripts you want excluded
+# ================================
+arff_to_csv.py
+validate_model.py
+
+flask_app.py
+static/style.css
+templates/index.html
+
+# ================================
+# Source folder (ignored entirely)
+# ================================
+src/
+
+# ================================
+# OS / IDE files
+# ================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ================================
+# Logs
+# ================================
+*.log
+
+# Screenshots
+Screenshot/
+screenshots/
+

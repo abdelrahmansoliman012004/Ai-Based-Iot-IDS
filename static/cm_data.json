@@ -1,0 +1,1 @@
+{"z": [[13417, 3, 2, 0], [13, 9680, 4, 0], [7, 5, 2032, 0], [6, 0, 0, 26]], "x": ["normal", "DoS", "MITM", "Data Injection"], "y": ["normal", "DoS", "MITM", "Data Injection"], "colorscale": "RdYlGn", "title": "Confusion Matrix", "labels": {"x": "Predicted", "y": "Actual", "color": "Count"}}

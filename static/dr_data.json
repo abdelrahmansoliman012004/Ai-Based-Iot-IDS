@@ -1,0 +1,1 @@
+{"x": ["normal", "DoS", "MITM", "Data Injection"], "y": [1.0, 0.998, 0.994, 0.812], "title": "Detection Rates per Attack Type", "labels": {"x": "Attack Type", "y": "Detection Rate"}}
